@@ -6,9 +6,20 @@
 <title>JS Bin</title>
 </head>
 <body>
-  
-  <div id='response'>Response: </div>
-  <script src="ajax_vanilla.js"></script>
+<h1 id='headline'></h1>      
+<h3 id='info'></h3>
+  <textarea id='response' cols='50' rows='15'>Response: </textarea>
+	
+	<!-- form for managing which responses are returned -->
+	<form>
+		<button type ='button' id='regular'>Regular Response</button>
+		<button type ='button' id='error'>Error Response</button>
+		<button type ='button' id='array'>Array Response</button>
+		<button type ='button' id='empty'>Empty Response</button>		
+	</form>
+
+
+<script src="ajax_vanilla.js"></script>	
 </body>
 </html>
 </html>
