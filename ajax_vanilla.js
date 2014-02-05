@@ -71,20 +71,18 @@ function checkDecision(decisionType) {
 
 
 	document.getElementById('regular').onclick = function() {
-		setTimeout(jsonRequest('http://localhost/xdomain_ajax/sample_response.html'),timeoutSecs);
-		console.log('currentTimeout: ' + timeoutSecs);
+		jsonRequest('http://localhost/xdomain_ajax/sample_response.html');
+		
 	}
 	document.getElementById('error').onclick = function() {
-		setTimeout(jsonRequest('http://localhost/xdomain_ajax/sample_error.html'),timeoutSecs);
-		console.log('currentTimeout: ' + timeoutSecs);
+		jsonRequest('http://localhost/xdomain_ajax/sample_error.html');
 	}
 	document.getElementById('array').onclick = function() {
-		setTimeout(jsonRequest('http://localhost/xdomain_ajax/sample_array.html'),timeoutSecs);
-		console.log('currentTimeout: ' + timeoutSecs);
+		jsonRequest('http://localhost/xdomain_ajax/sample_array.html');
 	}
 	document.getElementById('empty').onclick = function() {
-		setTimeout(jsonRequest('http://localhost/xdomain_ajax/sample_empty.html'),timeoutSecs);
-		console.log('currentTimeout: ' + timeoutSecs);
+		jsonRequest('http://localhost/xdomain_ajax/sample_empty.html');
+		
 	}
 
 return this.resuestURL;
